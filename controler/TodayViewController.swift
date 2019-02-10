@@ -17,7 +17,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
   @IBOutlet weak var tempLabel: UILabel!
   
   fileprivate var isFetched = false
-  fileprivate var location = "San Francisco, U.S."
+  fileprivate var location = "Egypt"
 
   override func viewDidLoad() {
     super.viewDidLoad()

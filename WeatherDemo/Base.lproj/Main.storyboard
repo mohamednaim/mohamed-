@@ -21,7 +21,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="paris" translatesAutoresizingMaskIntoConstraints="NO" id="rvp-Tg-cdZ">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="big city" translatesAutoresizingMaskIntoConstraints="NO" id="rvp-Tg-cdZ">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="clC-GE-JY2">
@@ -60,7 +60,7 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="30" id="5CV-7o-ZvV"/>
                                 </constraints>
-                                <state key="normal" image="hamburger_icon">
+                                <state key="normal" image="slide">
                                     <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
@@ -89,10 +89,10 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="CountryLABEL" destination="fY0-Dd-oro" id="sN7-LS-gn0"/>
+                        <outlet property="TempLabel" destination="kts-DU-7bC" id="wTU-cL-bNJ"/>
+                        <outlet property="WeatherLabel1" destination="e5f-qG-Ahb" id="XUB-S5-dOB"/>
                         <outlet property="cityLabel" destination="clC-GE-JY2" id="pan-f9-47i"/>
-                        <outlet property="countryLabel" destination="fY0-Dd-oro" id="sN7-LS-gn0"/>
-                        <outlet property="temperatureLabel" destination="kts-DU-7bC" id="wTU-cL-bNJ"/>
-                        <outlet property="weatherLabel" destination="e5f-qG-Ahb" id="XUB-S5-dOB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -159,7 +159,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="hamburger_icon" width="20" height="14"/>
-        <image name="paris" width="288" height="191.93142700195312"/>
+        <image name="big city" width="275" height="183"/>
+        <image name="slide" width="20" height="14"/>
     </resources>
 </document>

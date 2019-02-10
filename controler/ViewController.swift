@@ -13,9 +13,9 @@ import CoreData
 @available(iOS 10.0, *)
 class ViewController: UIViewController {
     @IBOutlet weak var cityLabel:UILabel!
-    @IBOutlet weak var countryLabel:UILabel!
-    @IBOutlet weak var weatherLabel:UILabel!
-    @IBOutlet weak var temperatureLabel:UILabel!
+    @IBOutlet weak var CountryLABEL:UILabel!
+    @IBOutlet weak var WeatherLabel1:UILabel!
+    @IBOutlet weak var TempLabel:UILabel!
 
 
     var city = "San Francisco"
@@ -30,8 +30,8 @@ class ViewController: UIViewController {
         //let newCity=NSEntityDescription.insertNewObject(forEntityName: "location", into: context)
        // newCity.setValue(city, forKey: "location")
         
-        weatherLabel.text = ""
-        temperatureLabel.text = ""
+        WeatherLabel1.text = ""
+        TempLabel.text = ""
         
         displayCurrentWeather()
     }
@@ -44,7 +44,7 @@ class ViewController: UIViewController {
     func displayCurrentWeather() {
         // Update location
         cityLabel.text = city
-        countryLabel.text = country
+        CountryLABEL.text = country
         
  // Invoke weather service to get the weather data
         let activityIndicator = UIActivityIndicatorView()
@@ -66,8 +66,8 @@ class ViewController: UIViewController {
             }
             OperationQueue.main.addOperation({ () -> Void in
                 if let weatherData = data {
-                    self.weatherLabel.text = weatherData.weather.capitalized
-                    self.temperatureLabel.text = String(format: "%d", weatherData.temperature) + "\u{00B0}"
+                    self.WeatherLabel1.text = weatherData.weather.capitalized
+                    self.TempLabel.text = String(format: "%d", weatherData.temperature) + "\u{00B0}"
                     activityIndicator.stopAnimating()
                 }
             })
